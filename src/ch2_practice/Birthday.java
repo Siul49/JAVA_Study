@@ -1,4 +1,4 @@
-package first_assignment;
+package ch2_practice;
 
 import java.util.Scanner;
 
