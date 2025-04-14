@@ -36,9 +36,12 @@ public class Student {
         else if (s1.getDiscount() < s2.getDiscount()) {
             System.out.println(s1.getName() + "의 출석 점수가 더 높음. " + s1.getName() +" 출석 점수는 " + (100-s1.getDiscount()));
         }
+        else {
+            System.out.println("점수 동일");
+        }
     }
 
-    static void printDiscount(Student s1, Student s2) {
+    static void displayDiscount(Student s1, Student s2) {
         System.out.println(s1.getName()+"의 감점은 " + s1.getDiscount() + ", "
                 +s2.getName()+"의 감점은 " + s2.getDiscount());
     }
@@ -55,7 +58,7 @@ public class Student {
         Scanner sc = new Scanner(System.in);
 
         getStudent(sc);
-        printDiscount(student[0], student[1]);
+        displayDiscount(student[0], student[1]);
         compareScore(student[0], student[1]);
     }
 }
