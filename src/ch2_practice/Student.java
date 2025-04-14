@@ -44,7 +44,7 @@ public class Student {
     }
 
     static Student[] student = new Student[2];
-    static void inputStudent(Scanner sc) {
+    static void getStudent(Scanner sc) {
         for (int i = 0; i < 2; i++) {
             System.out.print("학생"+(i+1)+">>");
             student[i] = new Student(sc.next(), sc.nextInt(), sc.nextInt());
@@ -54,7 +54,7 @@ public class Student {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        inputStudent(sc);
+        getStudent(sc);
         printDiscount(student[0], student[1]);
         compareScore(student[0], student[1]);
     }
