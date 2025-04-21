@@ -1,6 +1,5 @@
 package ch3_practice;
 
-import java.util.Scanner;
 
 public class Print2dArr{
     public static void main(String[] args) {
