@@ -73,6 +73,9 @@ public class ScoreDirectory {
                     System.out.print("프로그램을 종료합니다.");
                     return;
                 }
+                default -> {
+                    return;
+                }
             }
         }
     }

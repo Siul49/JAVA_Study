@@ -14,11 +14,11 @@ public class SumIsNine {
 
         System.out.print("자리수의 합이 9인 것은 ...");
         for (int i = 0; i < 10; i++) {
-            isNine(nums[i]);
+            SumIsNine.isNine(nums[i]);
         }
     }
 
-    private static void isNine(int num) {
+    private  static void isNine(int num) {
         int sum = 0;
         int tmp = num;
         while (num > 0) {
