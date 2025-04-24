@@ -17,7 +17,6 @@ public class ScoreDirectory {
         }
 
 
-        label:
         while(true){
             System.out.print("학번으로 검색: 1, 점수로 검색: 2, 끝내려면 3>>");
             String s = sc.next();
@@ -42,10 +41,8 @@ public class ScoreDirectory {
                             sc.nextLine();
                         }
                     }
-
-                    break;
-
-                } case "2" -> {
+                }
+                case "2" -> {
                     while(true) {
                         try {
                             System.out.print("점수>>");
@@ -71,7 +68,6 @@ public class ScoreDirectory {
                             sc.nextLine();
                         }
                     }
-                    break;
                 }
                 case "3" -> {
                     System.out.print("프로그램을 종료합니다.");
