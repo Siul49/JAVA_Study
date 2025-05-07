@@ -12,6 +12,4 @@ public class Factory {
     public static Scalar getScalar() {
         return new Scalar();
     }
-
-
 }
